@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Xbim.Common.Configuration;
 using Xbim.Common.Geometry;
 using Xbim.GLTF;
 using Xbim.Ifc;
@@ -49,7 +50,9 @@ namespace MainTests
 
         private static FileInfo CreateGeometry(FileInfo f, bool mode, bool useAlternativeExtruder)
         {
-            IfcStore.ModelProviderFactory.UseHeuristicModelProvider();
+            // IfcStore.ModelProviderFactory.UseHeuristicModelProvider();
+            XbimServices.Current.ConfigureServices(s => s.AddXbimToolkit(opt => opt.AddHeuristicModel()));
+
             using (var m = IfcStore.Open(f.FullName))
             {
                 var c = new Xbim3DModelContext(m);

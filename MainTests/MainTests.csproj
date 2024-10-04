@@ -31,8 +31,8 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
     <PackageReference Include="MSTest.TestAdapter" Version="3.6.1" />
     <PackageReference Include="MSTest.TestFramework" Version="3.6.1" />
-    <PackageReference Include="Xbim.Geometry" Version="5.1.541" />
-    <PackageReference Include="Xbim.IO.Esent" Version="6.0.445" />
+    <PackageReference Include="Xbim.Geometry" Version="5.1.762-develop" />
+    <PackageReference Include="Xbim.IO.Esent" Version="6.0.481-develop" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Xbim.GLTF.IO\Xbim.GLTF.IO.csproj" />

@@ -145,7 +145,8 @@ namespace Xbim.GLTF
             glTFLoader.Schema.Gltf gltf = new glTFLoader.Schema.Gltf();
             gltf.Asset = new glTFLoader.Schema.Asset()
             {
-                Generator = "Xbim.GLTF.IO",
+                // copycd::
+                Generator = "CCd.Xbim.GLTF.IO",
                 Version = "2.0"
             };
             return gltf;

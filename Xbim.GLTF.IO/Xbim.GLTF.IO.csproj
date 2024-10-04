@@ -6,7 +6,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>copycd</Authors>
     <Company>Heliosen</Company>
-    <Version>1.2410.04</Version>
+    <Version>1.2410.06</Version>
     <Product>CCd.$(AssemblyName)</Product>
     <PackageId>CCd.$(AssemblyName)</PackageId>
     <Platforms>x64</Platforms>
@@ -14,8 +14,8 @@
 
   <ItemGroup>
     <PackageReference Include="glTF2Loader" Version="1.1.4-alpha" />
-    <PackageReference Include="Xbim.Geometry" Version="5.1.762-develop" />
-    <PackageReference Include="Xbim.PropertySets" Version="4.0.1" />
+    <PackageReference Include="Xbim.Geometry" Version="5.1.437" />
+    <PackageReference Include="Xbim.Properties" Version="6.0.11" />
   </ItemGroup>
 
 </Project>

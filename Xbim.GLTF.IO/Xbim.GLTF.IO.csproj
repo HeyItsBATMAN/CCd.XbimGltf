@@ -9,6 +9,7 @@
     <Version>1.2410.04</Version>
     <Product>CCd.$(AssemblyName)</Product>
     <PackageId>CCd.$(AssemblyName)</PackageId>
+    <Platforms>x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>

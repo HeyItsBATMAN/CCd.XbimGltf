@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>copycd</Authors>
+    <Company>Heliosen</Company>
+    <Version>1.2410.04</Version>
+    <Product>CCd.$(AssemblyName)</Product>
+    <PackageId>CCd.$(AssemblyName)</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

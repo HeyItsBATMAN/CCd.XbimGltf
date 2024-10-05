@@ -23,6 +23,7 @@
 	<ItemGroup>
     <PackageReference Include="CCd.IOs" Version="5.2410.0" />
     <PackageReference Include="glTF2Loader" Version="1.1.4-alpha" />
+    <PackageReference Include="Xbim.Essentials" Version="6.0.445" />
     <PackageReference Include="Xbim.Geometry" Version="5.1.437" />
     <PackageReference Include="Xbim.Properties" Version="6.0.11" />
   </ItemGroup>

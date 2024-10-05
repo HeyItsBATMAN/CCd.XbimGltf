@@ -24,6 +24,8 @@ namespace MainTests
         public void CanConvertOneFile()
         {
             var ifc = new FileInfo("OneWallTwoWindows.ifc");
+            Assert.IsTrue(ifc.Exists);
+
             var xbim = CreateGeometry(ifc, true, false);
 
             using (var s = IfcStore.Open(xbim.FullName))
@@ -50,7 +52,7 @@ namespace MainTests
 
         private static FileInfo CreateGeometry(FileInfo f, bool mode, bool useAlternativeExtruder)
         {
-            // IfcStore.ModelProviderFactory.UseHeuristicModelProvider();
+            //IfcStore.ModelProviderFactory.UseHeuristicModelProvider();
             XbimServices.Current.ConfigureServices(s => s.AddXbimToolkit(opt => opt.AddHeuristicModel()));
 
             using (var m = IfcStore.Open(f.FullName))
